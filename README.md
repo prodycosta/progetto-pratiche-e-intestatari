@@ -26,10 +26,5 @@ ________________________________________________________________________________
 </ul>
 
 
-<video width="600" height="400" controls>
-    <source src="C:/Users/tuo-nome-utente/Desktop/pratiche e intestatari.mp4" type="video/mp4">
-    Il tuo browser non supporta il tag video.
-</video>
-
 
 
