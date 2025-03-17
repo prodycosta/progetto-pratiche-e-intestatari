@@ -21,7 +21,10 @@ DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE= il nome del db
 DB_USERNAME= la tua username
-DB_PASSWORD= la tua password del db</p>
+DB_PASSWORD= la tua password del db
+
+infine nel terminale del progetto scrivi "php artisan serve"
+</p>
 
 
 
