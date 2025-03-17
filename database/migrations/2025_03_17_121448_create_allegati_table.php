@@ -17,7 +17,10 @@ return new class extends Migration
             $table->binary('File'); // File (longblob)
             $table->unsignedBigInteger('id_pratica'); // id_pratica (bigint, unsigned)
             $table->timestamps();
-            $table->foreign('id_pratica')->references('id')->on('pratiche')->onDelete('cascade');
+            $table->foreign('id_pratica')
+                  ->references('id')
+                  ->on('pratiche')
+                  ->onDelete('cascade');
         });
     }
 
@@ -29,3 +32,4 @@ return new class extends Migration
         Schema::dropIfExists('allegati');
     }
 };
+

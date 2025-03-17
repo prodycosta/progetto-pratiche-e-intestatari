@@ -25,7 +25,7 @@ return new class extends Migration
             $table->timestamps();
 
             $table->foreign('id_utente')->references('id')->on('utenti')->onDelete('cascade');
-            $table->foreign('id_stato')->references('id')->on('stato_pratiche')->onDelete('cascade');
+            $table->foreign('id_stato')->references('id')->on('stato_pratica')->onDelete('cascade');
         });
     }
 
@@ -37,3 +37,4 @@ return new class extends Migration
         Schema::dropIfExists('pratiche');
     }
 };
+
