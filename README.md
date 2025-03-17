@@ -1,5 +1,28 @@
 <h1>Progetto pratiche e intestatari</h1>
 
+<h3>Per far partire l'applicativo</h3>
+<p>una volta fatta la clone del repository e importato il progetto
+
+esegui le seguenti righe nel terminale del progetto nel ide:
+composer --version
+
+composer install
+
+cp .env.example .env
+
+php artisan key:generate
+
+php artisan serve
+
+crea il db e nel file env imposta
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE= il nome del db
+DB_USERNAME= la tua username
+DB_PASSWORD= la tua password del db</p>
+
 
 
 <h3>Funzionalità</h3>
