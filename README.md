@@ -3,25 +3,24 @@
 <h3>Per far partire l'applicativo</h3>
 <p>una volta fatta la clone del repository e importato il progetto
 
-esegui le seguenti righe nel terminale del progetto nel ide:
+esegui le seguenti righe nella cartella del  terminale del progetto nel ide:
 composer --version
 
 composer install
 
 cp .env.example .env
 
-php artisan key:generate
-
-php artisan serve
-
-crea il db e nel file env imposta
-
+modifica informazioi nel .env 
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE= il nome del db
 DB_USERNAME= la tua username
 DB_PASSWORD= la tua password del db
+
+php artisan key:generate
+
+scrivi nel terminale "php artisan migrate" per creare le tabelle
 
 infine nel terminale del progetto scrivi "php artisan serve"
 </p>
