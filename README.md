@@ -18,9 +18,37 @@ DB_DATABASE= il nome del db
 DB_USERNAME= la tua username
 DB_PASSWORD= la tua password del db
 
+modifica anche per poter modificare la password dimenticata
+
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=465
+MAIL_USERNAME=la tua email
+MAIL_PASSWORD=password presa da gmail non é quella della email
+MAIL_ENCRYPTION=ssl
+MAIL_FROM_ADDRESS="la tua email"
+MAIL_FROM_NAME="nome a tuo piacimento"
+
+per MAIL_PASSWORD devi andare su gmail -> icona account -> gestisci account -> sicurezza -> verifica in due passaggi -> passwor delle app -> metti nome app e ti uscira la password da mettere in MAIL_PASSWORD -> mettila e togli gli spazi in modo che sia tutto attaccata
+
 php artisan key:generate
 
 scrivi nel terminale "php artisan migrate" per creare le tabelle
+
+prima di far partire l'applicativo scrivi le seguenti query 
+per la tabella ruoli=  INSERT INTO roles (id, nome)
+VALUES
+  (1, 'Admin'),
+  (2, 'User');
+
+  account partirá in automatico con ruolo Users, puo essere Admin se modificato dal db dalla tabella utenti, cambi la colonna ruolo da 1 a 2 oppure puo essere modificato da un admin
+per la tabella stato_pratica=  INSERT INTO stato_pratica (id, descrizione)
+VALUES
+  (1, 'Lavorazione'),
+  (2, 'Finita'),
+  (3, 'Annullata');
+  
+
 
 infine nel terminale del progetto scrivi "php artisan serve"
 </p>
