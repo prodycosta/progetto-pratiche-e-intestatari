@@ -57,8 +57,14 @@
                                     <input type="text" class="form-control form-control-user custom-input" id="exampleUsername" name="username" placeholder="Username" required maxlength="255">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user custom-input" id="exampleInputEmail" name="email" placeholder="Email" required maxlength="255">
-                                </div>
+    <input type="email" class="form-control form-control-user custom-input" id="exampleInputEmail" name="email" placeholder="Email" required maxlength="255" value="{{ old('email') }}">
+
+    @if ($errors->has('email'))
+        <div class="alert alert-danger small mt-1">
+            {{ $errors->first('email') }}
+        </div>
+    @endif
+</div>
                                 <div class="form-group row">
                                     <div class="col-sm-12 mb-2 mb-sm-0">
                                         <input type="password" class="form-control form-control-user custom-input" id="exampleInputPassword" name="password" placeholder="Password" required minlength="8" maxlength="255">
