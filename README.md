@@ -33,6 +33,8 @@ per MAIL_PASSWORD devi andare su gmail -> icona account -> gestisci account -> s
 
 php artisan key:generate
 
+php artisan storage:link
+
 scrivi nel terminale "php artisan migrate" per creare le tabelle
 
 prima di far partire l'applicativo scrivi le seguenti query 
